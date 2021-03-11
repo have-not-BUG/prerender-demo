@@ -1,5 +1,9 @@
 <template>
-    <div></div>
+    <div>
+        <div>
+            我是zero组件
+        </div>
+    </div>
 </template>
 
 <script>

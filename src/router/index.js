@@ -98,6 +98,7 @@ requireAllVueComponents.keys().forEach((allVueComponentItem) => {
 import Index from '@/components/index'
 import One from '@/components/autoRouter/one'
 import Two from '@/components/autoRouter/two'
+import Zero from '@/components/autoRouter/zero'
 
 
 
@@ -123,6 +124,14 @@ const routes = [
         path: '/autoRouter/two',
         name:'two',
         component:Two,
+
+        // component:() => import('@/components/autoRouter/two'),
+        // redirect: '/autoRouter/TablePageExample',
+    },
+    {
+        path: '/autoRouter/zero',
+        name:'zero',
+        component:Zero,
 
         // component:() => import('@/components/autoRouter/two'),
         // redirect: '/autoRouter/TablePageExample',

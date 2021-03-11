@@ -39,7 +39,7 @@ module.exports = {
                     staticDir: path.join(__dirname,'dist'),
                     // 对应自己的路由文件，比如a有参数，就需要写成 /a/param1。
                     // routes: ['/', '/contact','/demo','/dev','/footer','/header','/home','/news','/scheme'],
-                    routes: ['/','/autoRouter/one','/autoRouter/two'],
+                    routes: ['/','/autoRouter/one','/autoRouter/two','/autoRouter/zero'],
                     // 这个很重要，如果没有配置这段，也不会进行预编译
                     renderer: new Renderer({
                         injectProperty: '__PRERENDER_INJECTED',
