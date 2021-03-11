@@ -1,5 +1,10 @@
 <template>
   <div class="hello">
+    <router-link :to="{name:'zero'}">zero路由</router-link>
+    <br>
+    <router-link :to="{name:'one'}">one路由</router-link>
+    <br>
+    <router-link :to="{name:'two'}">two路由</router-link>
     <h1>{{ msg }}</h1>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
@@ -35,7 +40,8 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+
 }
 </script>
 

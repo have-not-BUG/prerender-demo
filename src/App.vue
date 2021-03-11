@@ -1,7 +1,12 @@
 <template>
   <div id="app">
+      <div>
+          <router-view></router-view>
+      </div>
+
 <!--    <img alt="Vue logo" src="./assets/logo.png">-->
-    <HelloWorld msg="测试预渲染prerender-spa-plugin"/>
+    <HelloWorld msg="我是app.vue内容"/>
+
   </div>
 </template>
 
