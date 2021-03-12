@@ -3,6 +3,7 @@
         <div>
             我是zero组件
         </div>
+        <p>{{showType()}}</p>
     </div>
 </template>
 
@@ -21,6 +22,16 @@
 
             }else {
                 console.log('zero未进行预渲染')
+            }
+        },
+        methods:{
+            showType(){
+                if(window.__PRERENDER_INJECTED && window.__PRERENDER_INJECTED.foo ==='bar'){
+                   return 'zero进行了预渲染'
+
+                }
+                return 'zero未进行预渲染'
+
             }
         }
 
